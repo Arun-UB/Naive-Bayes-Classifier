@@ -1,0 +1,26 @@
+nbtrain.py - Naive Bayes trainer
+--------------------------------------------------------
+
+- Requires python 3.2
+- To run the program 
+	nbtrain.py <training-directory> <model-file>
+	Example: python nbtrain.py textcat\train\ mymodel
+- The model is saved in the given <model-file>
+- There will be a output of Top 20 terms with pos/neg weight and negative/positive weight in the console.
+
+
+nbtest.py
+---------------------------------------------------------
+
+- Requires python 3.2
+- To run the program 
+	nbtest.py <model-file> <test-directory> <predictions-file>
+	> python nbtest.py mymodel \textcat\dev prediction
+- The result will be stored in the a <predictions-file>.csv file in the asked format
+
+
+The results are stored in a csv file.
+The top 20 terms for this trail can be found in Top20.txt
+
+- The prediction file for test data is available as prediction_test.csv
+

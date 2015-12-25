@@ -1,0 +1,22 @@
+nbtrain2.py - Naive Bayes trainer(Improvised)
+--------------------------------------------------------
+
+- Requires python 3.2
+- Requires nltk
+- To intsall nltk , follow this link http://www.nltk.org/install.html 
+- To run the program 
+	nbtrain2.py <training-directory> <model-file>
+	Example: python nbtrain.py textcat\train\ mymodel
+- The model is saved in the given <model-file>
+- There will be a output of Top 20 terms with pos/neg weight and negative/positive weight in the console.
+
+
+Improvements
+---------------------------------
+- Used normalization on the probability values 
+- Used the SnowballStemmer to stem the words. When I did this change the accuracy values changed to 77.0 % for positive reviews and 70.0 % for negative reviews. The accuracy for positive reviews decreased while for negative it increased 
+
+- Using Jeffreys-Perks Law to for smoothing.It is just that instead of adding 	1 in Laplace smoothing, we add 0.5. This change didn't make any difference and the accuracy remained same for some reason.
+- When I used Good Turing for soothing, the accuracy changed to 98.0% for positive reviews and 38.0% for negative reviews 
+
+- All these data is calculated for the dev data set 
